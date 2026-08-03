@@ -14,8 +14,13 @@
     <meta name="author" content="AdvanSys" />
     <meta name="robots" content="index, follow" />
 
+    <meta name="theme-color" content="#1ab394" />
+
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SICO" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:locale:alternate" content="en_US" />
     <meta
       property="og:title"
       content="SICO - Sistema Integral de Control On-Line"
@@ -24,8 +29,32 @@
       property="og:description"
       content="Plataforma completa para la gestión municipal moderna. Expedientes, actas, inspecciones y más."
     />
-    <meta property="og:image" content="img/sico-medium.png" />
+    <meta
+      property="og:image"
+      content="https://sico.net.ar/img/sico-home-lightdark.png"
+    />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1310" />
+    <meta
+      property="og:image:alt"
+      content="Panel de SICO - Sistema Integral de Control On-Line"
+    />
     <meta property="og:url" content="https://sico.net.ar" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="SICO - Sistema Integral de Control On-Line"
+    />
+    <meta
+      name="twitter:description"
+      content="Plataforma completa para la gestión municipal moderna. Expedientes, actas, inspecciones y más."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sico.net.ar/img/sico-home-lightdark.png"
+    />
 
     <link rel="icon" href="img/favicon.ico" />
     <link rel="canonical" href="https://sico.net.ar" />
@@ -58,6 +87,44 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/sico.css" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://sico.net.ar/#organization",
+            "name": "SICO",
+            "url": "https://sico.net.ar",
+            "logo": "https://sico.net.ar/img/sico-medium.png",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "AdvanSys",
+              "url": "https://www.advansys.com.ar"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://sico.net.ar/#website",
+            "url": "https://sico.net.ar",
+            "name": "SICO - Sistema Integral de Control On-Line",
+            "inLanguage": "es-AR",
+            "publisher": { "@id": "https://sico.net.ar/#organization" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "SICO - Sistema Integral de Control On-Line",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web, Android, iOS",
+            "description": "Plataforma completa para la gestión municipal moderna con app móvil nativa. Expedientes, actas de inspección, actuaciones, documentos, establecimientos y más.",
+            "url": "https://sico.net.ar",
+            "publisher": { "@id": "https://sico.net.ar/#organization" }
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body id="page-top">

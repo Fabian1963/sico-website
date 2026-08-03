@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sico.net.ar/sitemap.xml
