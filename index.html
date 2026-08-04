@@ -212,14 +212,14 @@
           </div>
           <div class="bento">
             <div class="card feat reveal"><div class="ico"><svg><use href="#i-folder"/></svg></div><h3 data-i18n="modules.exp_t">Expedientes</h3><p data-i18n="modules.exp_d">El corazón de SICO. Seguimiento completo del ciclo de vida de cada expediente, con pases, plazos y trazabilidad total.</p></div>
-            <div class="card reg reveal"><div class="ico"><svg><use href="#i-check"/></svg></div><h3 data-i18n="modules.act_t">Actas de inspección</h3><p data-i18n="modules.act_d">Labrado digital en el momento.</p></div>
-            <div class="card reg reveal"><div class="ico"><svg><use href="#i-clip"/></svg></div><h3 data-i18n="modules.actu_t">Actuaciones</h3><p data-i18n="modules.actu_d">Cada trámite, ordenado y al día.</p></div>
-            <div class="card reg reveal"><div class="ico"><svg><use href="#i-doc"/></svg></div><h3 data-i18n="modules.doc_t">Documentos</h3><p data-i18n="modules.doc_d">Repositorio único y buscable.</p></div>
-            <div class="card reg reveal"><div class="ico"><svg><use href="#i-wrench"/></svg></div><h3 data-i18n="modules.ord_t">Órdenes de trabajo</h3><p data-i18n="modules.ord_d">Del pedido a la ejecución.</p></div>
-            <div class="card reg reveal"><div class="ico"><svg><use href="#i-user"/></svg></div><h3 data-i18n="modules.prof_t">Profesionales</h3><p data-i18n="modules.prof_d">Matrículas y habilitaciones.</p></div>
-            <div class="card reg reveal"><div class="ico"><svg><use href="#i-build"/></svg></div><h3 data-i18n="modules.est_t">Establecimientos</h3><p data-i18n="modules.est_d">Padrón vivo del municipio.</p></div>
-            <div class="card reg reveal"><div class="ico"><svg><use href="#i-swap"/></svg></div><h3 data-i18n="modules.pas_t">Pases</h3><p data-i18n="modules.pas_d">Circuito interno sin papel.</p></div>
-            <div class="card wide reveal"><div class="ico"><svg><use href="#i-shieldu"/></svg></div><h3 data-i18n="modules.cons_t">Defensa del Consumidor</h3><p data-i18n="modules.cons_d">Denuncias, audiencias y resoluciones, gestionadas de punta a punta.</p></div>
+            <div class="card reg reveal"><div class="ico"><svg><use href="#i-check"/></svg></div><h3 data-i18n="modules.act_t">Actas de inspección</h3><p data-i18n="modules.act_d">Comprobaciones, infracciones, intimaciones y clausuras, labradas en el momento y vinculadas al expediente.</p></div>
+            <div class="card reg reveal"><div class="ico"><svg><use href="#i-clip"/></svg></div><h3 data-i18n="modules.actu_t">Actuaciones</h3><p data-i18n="modules.actu_d">Otorgá plazos a contribuyentes y controlá vencimientos con alertas y notificaciones automáticas.</p></div>
+            <div class="card reg reveal"><div class="ico"><svg><use href="#i-doc"/></svg></div><h3 data-i18n="modules.doc_t">Documentos</h3><p data-i18n="modules.doc_d">PDF, imágenes y archivos Office en un repositorio único, con visualización en línea y búsqueda avanzada.</p></div>
+            <div class="card reg reveal"><div class="ico"><svg><use href="#i-wrench"/></svg></div><h3 data-i18n="modules.ord_t">Órdenes de trabajo</h3><p data-i18n="modules.ord_d">Asigná inspectores, seguí el estado de cada orden y vinculala con sus actas de inspección.</p></div>
+            <div class="card reg reveal"><div class="ico"><svg><use href="#i-user"/></svg></div><h3 data-i18n="modules.prof_t">Profesionales</h3><p data-i18n="modules.prof_d">Registro unificado de gestores, ingenieros y arquitectos, con especialidades y control de duplicados.</p></div>
+            <div class="card reg reveal"><div class="ico"><svg><use href="#i-build"/></svg></div><h3 data-i18n="modules.est_t">Establecimientos</h3><p data-i18n="modules.est_d">Comercios e industrias con propietarios, rubros, direcciones y CUIT, siempre actualizados.</p></div>
+            <div class="card reg reveal"><div class="ico"><svg><use href="#i-swap"/></svg></div><h3 data-i18n="modules.pas_t">Pases</h3><p data-i18n="modules.pas_d">Historial cronológico de cada movimiento del expediente entre áreas, con trazabilidad total.</p></div>
+            <div class="card wide reveal"><div class="ico"><svg><use href="#i-shieldu"/></svg></div><h3 data-i18n="modules.cons_t">Defensa del Consumidor</h3><p data-i18n="modules.cons_d">Denuncias, audiencias y resoluciones de defensa del consumidor, gestionadas de punta a punta y con estadísticas.</p></div>
             <div class="card mob reveal"><div class="ico"><svg><use href="#i-phone"/></svg></div><div><span class="pill" data-i18n="modules.mob_pill">App nativa</span><h3 data-i18n="modules.mob_t">SICO Mobile</h3><p data-i18n="modules.mob_d">Inspecciones en la calle, con o sin señal. Sincroniza al volver.</p></div></div>
           </div>
         </div>
@@ -266,12 +266,25 @@
             </div>
             <div class="reveal">
               <div class="phone">
-                <span class="offline">● Offline</span>
-                <div class="ph-h"><img src="img/sico-iso.png" alt="" style="height:20px" /> Nueva acta</div>
-                <div class="ph-card"><div class="t">Establecimiento</div><div class="s">Comercio · Av. Mitre 1240</div></div>
-                <div class="ph-card"><div class="t">📷 3 fotos adjuntas</div><div class="s">📍 -34.603, -58.381</div></div>
-                <div class="ph-card"><div class="t">Firma del responsable</div><div class="s">✔ Registrada</div></div>
-                <div class="ph-btn">Guardar acta</div>
+                <div class="ph-screen">
+                  <div class="ph-top">
+                    <span class="ph-brand"><img src="img/sico-iso.png" alt="" /> SICO</span>
+                    <span class="ph-online">● En línea</span>
+                  </div>
+                  <div class="ph-greet">Buen día,<b>Inspector</b></div>
+                  <div class="ph-kpis">
+                    <div class="pk" style="--c:#2b6cb0"><div class="pk-n">1</div><div class="pk-l">Asignadas</div></div>
+                    <div class="pk" style="--c:#F0982E"><div class="pk-n">1</div><div class="pk-l">Pendientes</div></div>
+                    <div class="pk" style="--c:#F0982E"><div class="pk-n">0</div><div class="pk-l">En proceso</div></div>
+                    <div class="pk" style="--c:#1f9d6b"><div class="pk-n">0</div><div class="pk-l">Inspeccionadas</div></div>
+                  </div>
+                  <div class="ph-sec">Órdenes de trabajo</div>
+                  <div class="ph-order">
+                    <div class="po-ic">🔍</div>
+                    <div><div class="po-t">INS-2026-102174</div><div class="po-s">Inspección · Av. Mitre 1240</div><span class="po-tag">Programada · 24/07</span></div>
+                  </div>
+                </div>
+                <div class="ph-nav"><span>Inicio</span><span>Órdenes</span><span>Calendario</span><span>Perfil</span></div>
               </div>
             </div>
           </div>
